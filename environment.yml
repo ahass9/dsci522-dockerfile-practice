@@ -1,0 +1,8 @@
+name: dsci522-dockerfile-practice
+channels:
+  - conda-forge
+dependencies:
+  - scikit-learn=1.5.2
+  - pandas=2.2.2
+  - python=3.11
+prefix: /Users/ashifahassam/miniforge3/envs/dsci522-dockerfile-practice
