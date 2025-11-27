@@ -10,3 +10,4 @@ RUN conda create --name dsci522-env --file conda-linux-aarch64.lock
 
 
 ENV CONDA_DEFAULT_ENV=dsci522-env
+ENV PATH=/opt/conda/envs/dsci522-env/bin:$PATH
