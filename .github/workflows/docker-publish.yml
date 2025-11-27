@@ -10,7 +10,7 @@ on:
   push: 
     paths: 
       - 'Dockerfile'
-      - 'conda-linux-64.lock'
+      - 'conda-linux-aarch64.lock'
       
 jobs:
   push_to_registry:
@@ -30,7 +30,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ttimbers/dsci522-dockerfile-practice
+          images: ahass9/dsci522-dockerfile-practice
           tags: |
             type=raw, value={{sha}},enable=${{github.ref_type != 'tag' }}
             type=raw, value=latest
